@@ -26,8 +26,8 @@ export const todoReducer = (state = [], action) => {
         todos: [
           ...state.todos,
           {
-            id: Date.now,
             todo: action.payload,
+            id: Date.now,
             completed: false
           }
         ]
